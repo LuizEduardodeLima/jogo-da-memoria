@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da memória</title>
+	<!--Codificação utf8-->
+	<meta charset="utf-8">
+
+	<!--Fonte do google-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		body, html{
+			margin: 0px;
+			height: 100%;
+			background-image: url('imagens/site.jpg');
+
+		}
+		.flex{
+			display: flex;
+			width: 100%;
+		}
+		#um{
+			order: 1;
+			padding: 10px;
+			width: 20%;
+		}
+		#dois{
+			order: 2;
+			padding: 10px;
+			width: 20%;
+		}
+		#tres{
+			order: 3;
+			padding: 10px;
+			width: 20%;
+		}
+		#quatro{
+			order: 4;
+			padding: 10px;
+			width: 20%;
+		}
+		#cinco{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#seis{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#sete{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#oito{id
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#nove{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#dez{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#onze{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#doze{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#treze{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#quatorze{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#quinze{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#dezesseis{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#dezessete{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#dezoito{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#dezenove{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		#vinte{
+			order: 5;
+			padding: 10px;
+			width: 20%;
+		}
+		.titulo{
+			font-size: 30px;
+			color: white;
+			background-color: black;
+			padding: 20px;
+			border-radius: 50px;
+			font-family: 'Londrina Solid', cursive;
+			text-align: center;
+			width: 100%;
+		}
+		.placar{
+			width: 30%;
+			color: white;
+			font-size: 30px;
+			font-family: 'Londrina Solid', cursive;
+			padding-left: 30px;
+			background-color: black;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 20px;
+		}
+		.time{
+			width: 70%;
+			font-size: 30px;
+			font-family: 'Londrina Solid', cursive;
+			padding-left: 30px;
+			background-color: white;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 20px;
+			background-color: black;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="flex">
+		<h1 class="titulo">Jogo da Memória - Animais</h1>
+	</div>
+
+	<div class="flex">
+		<div class="placar">
+			<label class="pontos">(Pontuação):</label>
+			<label class="nome_1"></label>
+			<label class="nome_2"></label>
+		</div>
+
+		<div class="time"></div>
+
+	</div>
+
+	<div class="flex">
+		<img src="imagens/fundo.jpg" id="um" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="dois" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="tres" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="quatro" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="cinco" class="pegar_click">
+	</div>
+
+	<div class="flex">
+		<img src="imagens/fundo.jpg" id="seis" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="sete" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="oito" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="nove" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="dez" class="pegar_click">
+	</div>
+
+	<div class="flex">
+		<img src="imagens/fundo.jpg" id="onze" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="doze" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="treze" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="quatorze" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="quinze" class="pegar_click">
+	</div>
+
+	<div class="flex">
+		<img src="imagens/fundo.jpg" id="dezesseis" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="dezessete" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="dezoito" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="dezenove" class="pegar_click">
+		<img src="imagens/fundo.jpg" id="vinte" class="pegar_click">
+	</div>
+
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+
+	<script type="text/javascript" src="scripts/script.js"></script>
+
+	<script type="text/javascript">
+		
+		
+
+		
+	</script>
+	
+</body>
+</html>
